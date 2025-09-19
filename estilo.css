@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wdth,wght@0,100.8,500;1,100.8,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Esta es la parte del contenedor como tal*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./Imagenes/porsche.jpg);
+    background-size: contain;
+    font-family: 'Zalando Sans', sans-serif;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 3px solid white ;
+    border-radius: 10px;
+    padding: 200px;
+}
+
+label{
+    color: aliceblue;
+}
+
+.usuario{
+    border: 2px solid rgb(94, 84, 84);
+    border-radius: 10px;
+}
+
+.contrasena{
+    border: 2px solid rgb(94, 84, 84);
+    border-radius: 10px;
+}
+
+/*Todavia falta la parte para decorar y centrar el input en el medio*/
