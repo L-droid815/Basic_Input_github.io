@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 /*Esta es la parte del contenedor como tal*/
@@ -27,6 +29,14 @@
     padding: 200px;
 }
 
+h2{
+    color: aliceblue;
+    margin-bottom: 20px;
+    border: 3px solid #fde5e5;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
 label{
     color: aliceblue;
 }
@@ -40,5 +50,31 @@ label{
     border: 2px solid rgb(94, 84, 84);
     border-radius: 10px;
 }
+            
+.butons{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px 20px;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
 
-/*Todavia falta la parte para decorar y centrar el input en el medio*/
+button:hover{
+    box-shadow: 0 8px 8px 0 #f3ebeb,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+
+@media(max-width: 991px){
+
+    .container{
+        max-width: 991px;
+        height: 200vh;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+    }
+}
